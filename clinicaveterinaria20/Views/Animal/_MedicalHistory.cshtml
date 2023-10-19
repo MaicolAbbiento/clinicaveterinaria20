@@ -1,0 +1,30 @@
+﻿@model List<clinicaveterinaria20.Models.Visita>
+
+<h2>Cronistoria medica</h2>
+
+@if (Model.Count == 0)
+{
+    <p>Non ci sono visite registrate per questo animale.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Data visita</th>
+                <th>Esame obiettivo</th>
+                <th>Descrizione cura</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var visita in Model)
+            {
+                <tr>
+                    <td>@visita.datavisita</td>
+                    <td>@visita.esame</td>
+                    <td>@visita.cura</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

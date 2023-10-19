@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<style>
+    #animal-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        min-height: 30vh;
+    }
+
+    .btn:hover {
+        background-color: #31afff !important;
+        color: white !important;
+    }
+</style>
+
+<div class="d-flex align-items-center justify-content-center position-relative">
+    <div id="animal-home" class="text-center">
+        <h2 class="mt-5">FARMACIA VETERINARIA</h2>
+        <div class="row mt-5 pt-5">
+            <div class="col-md-6">
+                @Html.ActionLink("Lista prodotti", "Index", null, new { @class = "btn btn-light btn-lg m-4 w-100 rounded-pill border-0" })
+                @Html.ActionLink("Cerca prodotto", "magazzino", "magazzino", null, new { @class = "btn btn-light btn-lg m-4 w-100 rounded-pill border-0" })
+                @Html.ActionLink("Aggiungi prodotto", "inserisciprodottoinmagazino", "magazzino", null, new { @class = "btn btn-light btn-lg m-4 w-100 rounded-pill border-0" })
+                @Html.ActionLink("Gestione scaffali", "aggiungiArmadio", "magazzino", null, new { @class = "btn btn-light btn-lg m-4 w-100 rounded-pill border-0" })
+                @Html.ActionLink("Fornitori", "aggiugiAziende", "magazzino", null, new { @class = "btn btn-light btn-lg m-4 w-100 rounded-pill border-0" })
+            </div>
+        </div>
+    </div>
+    <div class="position-absolute" style="z-index:-1; bottom: 80px; right:5%">
+        <img src="~/Content/img/pharmacy.svg" alt="pet" />
+    </div>
+</div>
+
