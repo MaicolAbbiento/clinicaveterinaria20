@@ -18,12 +18,10 @@
     </div>
     <nav id="nav">
         <ul>
-            <li class="shape-circle circle-one"><a href="#">Contact</a></li>
-            <li class="shape-circle circle-two"><a href="#">Blog</a></li>
-            <li class="shape-circle circle-three"><a href="#">Work</a></li>
-            <li class="shape-circle circle-five">
-                <a href="#">Home</a>
-            </li>
+            <li class="shape-circle circle-one">@Html.ActionLink("Animali", "Index", "Animal", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="shape-circle circle-two">@Html.ActionLink("Visite", "Index", "Appointment", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="shape-circle circle-three">@Html.ActionLink("Magazzino", "magazzino", "magazzino", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="shape-circle circle-five">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
         </ul>
     </nav>
     <div class="container-fluid body-content p-0 min-vh-100 d-flex flex-column justify-content-between">

@@ -8,9 +8,10 @@ body {
     position: relative;
     background-color: #9DC8FF;
     background-size: cover;
-    color: #fff;
+    min-height: 200px;
     font-family: 'Cairo', sans-serif;
     min-height: 100vh;
+    height: 100vmax;
 }
 
 .bars {
@@ -62,8 +63,8 @@ body {
     animation: bottom-bar 1s;
     animation-fill-mode: forwards;
 }
-
 /* Navbar Links CSS */
+
 
 #nav {
     position: absolute;
@@ -175,10 +176,10 @@ nav.visible li:last-child a {
     line-height: 35vw !important;
     text-indent: 6vw !important;
     background-image: url("img/uploads/placeholder.jpg");
-    margin: 150px;
+   /* margin: 150px;*/
 }
-
 /* Main Body CSS */
+
 
 .container {
     display: flex;
